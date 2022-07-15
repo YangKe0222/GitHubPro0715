@@ -5,6 +5,7 @@ public class Student {
     private Integer chinese;
     private Integer math;
     private Integer english;
+    private Integer his;
 
     public Student() {
     }
@@ -14,6 +15,13 @@ public class Student {
         this.chinese = chinese;
         this.math = math;
         this.english = english;
+    }
+    
+    public Student(String name, Integer chinese, Integer math, Integer his) {
+        this.name = name;
+        this.chinese = chinese;
+        this.math = math;
+        this.his = his;
     }
 
     public String getName() {
@@ -53,6 +61,7 @@ public class Student {
         return "{" +
                 "\"name\":\""+this.name+"\","+
                 "\"chinese\":\""+this.chinese+"\","+
+                "\"his\":\""+this.his+"\","+
                 "\"math\":\""+this.math+"\","+
                 "\"english\":\""+this.english+"\""+
                 "}";
